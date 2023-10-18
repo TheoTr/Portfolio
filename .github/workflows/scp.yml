@@ -19,3 +19,4 @@ jobs:
         port: ${{ secrets.PORT }}
         source: "src/*"
         target: "/var/www/portfolio/"
+        glob: true
