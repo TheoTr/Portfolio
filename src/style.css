@@ -86,15 +86,7 @@ body {
     text-shadow: 0 0 10px #000;
     text-align: center;
 }
-.struct_portfolio h2{
-    position: absolute;
-    top: 26%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    text-shadow: 0 0 10px #000;
-    text-align: center;
-}
+
 .box {
     display: flex;
     flex-direction: column; /* Ajustez la direction pour empiler les éléments verticalement */
@@ -123,8 +115,12 @@ body {
     align-items: center;
     flex-direction: column;
     list-style: none;
-    margin-top: 20px
+    margin-top: 20px;
+    width: 250px;
+    height: 400px;
+    overflow: auto;
 }
+
 .box ul li{
     margin: 10px 0;
     text-align: center;
@@ -135,20 +131,17 @@ body {
     line-height: 50px;
     border-radius: 30px;
     cursor: pointer;
-    overflow: hidden;
     color: #fff;
+    
 }
 .box ul li:hover{
     color: #000;
-    
+    text-shadow: none;
     background: #fff;
-    box-shadow: 0 0 10px #fff,
-                0 0 40px #fff,
-                0 0 80px #fff;
 }
 
 .boxmaster{
-    margin-top: 12%;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: top;
@@ -158,6 +151,4 @@ body {
     border: #fff;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.5);
-
-
 }
