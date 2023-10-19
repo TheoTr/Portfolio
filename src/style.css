@@ -35,6 +35,7 @@
     transition: 0.5s;
     overflow: hidden;
     color: #fff;
+    cursor: pointer;
 }
 .portfolio_btn a:hover{
     color: #000;
@@ -125,7 +126,7 @@ body {
     margin-top: 20px
 }
 .box ul li{
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
     text-shadow: 0 0 10px #000;
     font-size: 20px;
@@ -134,7 +135,6 @@ body {
     line-height: 50px;
     border-radius: 30px;
     cursor: pointer;
-    transition: 0.5s;
     overflow: hidden;
     color: #fff;
 }
@@ -154,7 +154,7 @@ body {
     align-items: top;
     flex-direction: row;
     width: 500px;
-    height: 550px;
+    height: 450px;
     border: #fff;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.5);
