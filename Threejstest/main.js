@@ -76,19 +76,18 @@ let i = 0;
 let intervalid;
 let time = 2.5;
 
-
 function onKeyapress(event) {
-	console.log(event.key);
-	if (event.key == "ArrowUp") {
-		intervalid = setInterval(function() {
-			camera.position.x += 0.1;
-			i++;
-			if (i == 500) {
-				clearInterval(intervalid);
-				i = 0;
-			}
-		}, time*2);
-	}
+		console.log(event.key);
+		if (event.key == "ArrowUp") {
+			intervalid = setInterval(function() {
+				camera.position.x += 0.1;
+				i++;
+				if (i == 500) {
+					clearInterval(intervalid);
+					i = 0;
+				}
+			}, time*2);
+		}
 	else if (event.key == "ArrowDown") {
 		intervalid = setInterval(function() {
 			camera.position.x -= 0.1;
@@ -99,8 +98,8 @@ function onKeyapress(event) {
 			}
 		}, time*2);
 	}
-
 }
+
 
 
 
