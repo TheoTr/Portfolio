@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($user && password_verify($password, $user['password'])) {
         // L'authentification a réussi, rediriger vers la page d'accueil
         $_SESSION['username'] = $user['username'];
-        echo '<script>alert("Connexion réussie ! Bienvenue."); window.location.href = "home.php";</script>';
+        echo '<script>alert("Connexion réussie ! Bienvenue."); window.location.href = "index.php";</script>';
     } else {
         // L'authentification a échoué, afficher un message d'erreur
         echo '<script>alert("Échec de la connexion. Veuillez réessayer."); window.location.href = "login.php";</script>';
