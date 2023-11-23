@@ -57,7 +57,6 @@ h3 {
     </style>
 <body>
     
-    
     <form method="post" action="login_process.php">
         <h2>Connexion</h2>
          <div class="logframe">
@@ -68,5 +67,6 @@ h3 {
         <a class="register" href="register.php">S'inscrire</a>
         </div>
     </form>
+
 </body>
 </html>

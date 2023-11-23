@@ -23,16 +23,29 @@ h1 {
     color: white;
 }
 </style>
+<?php
+session_start();
+
+// Vérification de la session pour s'assurer que l'utilisateur est connecté
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit(); // Arrêter l'exécution du code si l'utilisateur n'est pas connecté
+}
+
+// Affichage du nom d'utilisateur sur la page d'accueil
+$username = $_SESSION['username'];
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accueil</title>
+</head>
 <body>
-    <?php
-    session_start();
-
-    if (!isset($_SESSION['username'])) {
-        header("Location: login.php");
-    }
-
+    <h1>Bienvenue, <?php echo $username; ?>, sur la page d'accueil !</h1>
     
-    ?>
-    <h1>Vous êtes bien connecté</h1>
+    <!-- Votre contenu de page d'accueil -->
+    
+    <a href="logout.php">Se déconnecter</a> <!-- Lien pour se déconnecter, mène vers un script de déconnexion -->
 </body>
 </html>
