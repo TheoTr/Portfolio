@@ -98,7 +98,7 @@
     color: #fff;
 }
 body {
-    background-image: url('img/backgroundimg.jpg');
+    background-image: url('../img/backgroundimg.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
