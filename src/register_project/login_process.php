@@ -8,8 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Connexion à la base de données
     $HOSTNAME = "localhost";
     $DATABASE = "register_db";
-    $USERNAME = "root";
-    $PASSWORD = "";
+    $USERNAME = "theo_admin";
+    $PASSWORD = "J18M12A2001";
     
     $db = new PDO("mysql:host=$HOSTNAME;dbname=$DATABASE", $USERNAME, $PASSWORD);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
