@@ -22,6 +22,11 @@ h1 {
     font-size: 50px;
     color: white;
 }
+a {
+    margin: auto;
+    font-size: 30px;
+    color: white;
+}
 </style>
 <?php
 session_start();
