@@ -42,7 +42,7 @@ $username = $_SESSION['username'];
     <title>Accueil</title>
 </head>
 <body>
-    <h1>Bienvenue, <?php echo $username; ?>, sur la page d'accueil !</h1>
+    <h1>Bienvenue <?php echo $username; ?> sur la page d'accueil !</h1>
     
     <!-- Votre contenu de page d'accueil -->
     
