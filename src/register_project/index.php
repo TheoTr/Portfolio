@@ -24,6 +24,15 @@ h1 {
 }
 </style>
 <body>
+    <?php
+    session_start();
+
+    if (!isset($_SESSION['username'])) {
+        header("Location: login.php");
+    }
+
+    
+    ?>
     <h1>Vous êtes bien connecté</h1>
 </body>
 </html>
