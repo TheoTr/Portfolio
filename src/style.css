@@ -67,7 +67,7 @@
                 0 0 40px #fff,
                 0 0 80px #fff;
 }
-.juice_btn a{
+.exercice_btn a{
     position: absolute;
     top: 90%;
     left: 50%;
@@ -83,7 +83,7 @@
     color: #fff;
     cursor: pointer;
 }
-.juice_btn a:hover{
+.exercice_btn a:hover{
     color: #000;
     background: #fff;
     box-shadow: 0 0 10px #fff,

@@ -63,3 +63,63 @@ nav img {
     margin-right:  50px;
 }
 
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+}
+
+.presentation table{
+    margin-top: 5%;
+}
+.presentation h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: red 2px solid;
+}
+.presentation h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: blue 2px solid;
+    cursor: pointer;
+}
+.presentation a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.presentation a:hover {
+    color: #000;
+    background: #fff;
+    box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+.return_btn a{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 1%;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: #fff;
+    cursor: pointer;
+}
+
+.return_btn:hover a{
+    color: #000;
+    background: #fff;
+    box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
