@@ -3,6 +3,8 @@ setlocal enabledelayedexpansion
 
 :loop
 
+REM Exécute le script PowerShell pour ajuster le volume
+PowerShell -ExecutionPolicy Bypass -File "soundup.ps1"
 
 REM Chemin vers le dossier contenant les sons
 set "chemin_sons=sounds"
