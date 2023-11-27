@@ -18,6 +18,6 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         source: source: "src/*"
-        target: "/var/www/portfolio/"
+        target: "/var/www/html/portfolio/"
         rm: true
         strip_components: 1
