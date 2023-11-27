@@ -17,9 +17,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        source: |
-          src/**
-          !src/wordpress/**
+        source: source: "src/*"
         target: "/var/www/portfolio/"
         rm: true
         strip_components: 1
