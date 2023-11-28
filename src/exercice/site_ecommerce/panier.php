@@ -1,6 +1,5 @@
 <?php
 require_once('func.php');
-session_start();
 
 // ... (code précédent pour récupérer les données et les fonctions) ...
 
@@ -15,20 +14,15 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-    <a href="index.php" class="home_btn" >Menu</a>
-        <h1 id="titre_page">Panier</h1>
-        <?php
-        $panier = $_SESSION['panier'];
-        $nombreObjetsDansPanier = 0;
-        foreach ($panier as $key => $value) {
-            $nombreObjetsDansPanier += $value;
-        }
 
-        echo '<p class="panier">'. "Panier : " . $nombreObjetsDansPanier . '</p>';
-        ?>
+<nav class="navbar">
+        <a href="index.php" class="home_btn" >Home</a>
+        <h1 id="titre_page">Boutique</h1>
+<?php
+    echo '<p class="panier">'. "Panier : " . $nombreObjetsDansPanier . '</p>';
+    echo '</nav>';
+?>
         
- 
     </nav>
     <div class="table_panier">
     <table border="1">

@@ -1,4 +1,6 @@
-
+<?php
+require_once('func.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +11,12 @@
 </head>
 <body>
 <nav class="navbar">
-    <a href="index.php" class="home_btn" >Menu</a>
-    <h1 id="titre_page">Boutique</h1>
-    <a href="panier.php" class="panier">Panier</a>
-
-</nav>
-
+        <a href="index.php" class="home_btn" >Home</a>
+        <h1 id="titre_page">Boutique</h1>
+<?php
+    echo '<p class="panier">'. "Panier : " . $nombreObjetsDansPanier . '</p>';
+    echo '</nav>';
+?>
 <?php
 
 require_once('func.php');

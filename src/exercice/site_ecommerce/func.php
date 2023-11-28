@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $jsonFilePath = 'products.json';
 
 $jsonData = file_get_contents($jsonFilePath);
@@ -18,5 +18,11 @@ function FindProductById($products, $id) {
     }
     return null;
 }
+
+$panier = $_SESSION['panier'];
+$nombreObjetsDansPanier = 0;
+    foreach ($panier as $key => $value) {
+        $nombreObjetsDansPanier += $value;
+    }
 
 ?>
