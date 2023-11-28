@@ -15,8 +15,9 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.php" class="home_btn" >Home</a>
+    <nav class="navbar">
+    <a href="index.php" class="home_btn" >Menu</a>
+        <h1 id="titre_page">Panier</h1>
         <?php
         $panier = $_SESSION['panier'];
         $nombreObjetsDansPanier = 0;
@@ -24,12 +25,11 @@ session_start();
             $nombreObjetsDansPanier += $value;
         }
 
-        echo '<p class="count_object">' . "Nombre d'objets dans le panier :" . $nombreObjetsDansPanier . 
-        '</p>'
+        echo '<p class="panier">'. "Panier : " . $nombreObjetsDansPanier . '</p>';
         ?>
+        
+ 
     </nav>
-
-    <h2>PANIER</h2>
     <div class="table_panier">
     <table border="1">
         <tr>
@@ -68,10 +68,11 @@ session_start();
     // Calcul du total TTC en supposant une TVA de 20%
     $taxRate = 0.20;
     $totalTTC = $totalHorsTaxes * (1 + $taxRate);
-
+    echo '<div class="total">';
     echo '<p>Total hors taxes : ' . $totalHorsTaxes . '</p>';
     echo '<p>Total TVA   : ' . $totalHorsTaxes * $taxRate . '</p>';
     echo '<p>Total TTC : ' . $totalTTC . '</p>';
+    echo '</div>';
     ?>
 </body>
 </html>

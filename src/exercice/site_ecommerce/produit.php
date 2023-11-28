@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="index.php" class="home_btn" >Home</a>
-    </nav>
+<nav class="navbar">
+    <a href="index.php" class="home_btn" >Menu</a>
+    <h1 id="titre_page">Boutique</h1>
+    <a href="panier.php" class="panier">Panier</a>
+
+</nav>
 <?php
 
 require_once('func.php');
@@ -28,15 +31,13 @@ if ($products === null && json_last_error() !== JSON_ERROR_NONE) {
 $product = FindProductById($products, $id);
 
 $imgsrc = 'images/' . $product->image;
-
-echo "<section> \n";
-echo "<p> \n" ;
+echo '<div class="fiche-produit2">';
 echo '<h1>' . $product->name . '</h1>';
 echo '<img src="' . $imgsrc . '" alt="' . $product->name . '"><br>';
 echo '<h3>' . $product->price . '</h3>';
 echo '<a class="btn" href="ajout.php?id=' . $product->id. '">Ajouter au panier</a>';
-echo '<a class="btn" href="index.php">Retour</a>';
 echo '<a class="btn" href="panier.php">Voir le panier</a>';
+echo '</div>';
 
 ?>
 </body>

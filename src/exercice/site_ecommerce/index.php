@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<nav class="navbar">
+    <a href="index.php" class="home_btn" >Menu</a>
+    <h1 id="titre_page">Boutique</h1>
+    <a href="panier.php" class="panier">Panier</a>
 
-<h1 id="titre_page">Boutique</h1>
+</nav>
 
 <?php
 
@@ -20,12 +24,12 @@ echo "<section> \n";
 foreach ($products as $product) {
     
     $imgsrc = 'images/' . $product->image;
-    echo "<p> \n" ;
+    echo '<div class="fiche-produit">';
     echo '<h1>' . $product->name . '</h1>';
     echo '<img src="' . $imgsrc . '" alt="' . $product->name . '"><br>';
     echo '<h3>' . $product->price . '</h3>';
     echo '<a class="btn" href="produit.php?id=' . $product->id . '">Voir le produit</a>';
-    echo '</p>';
+    echo '</div>';
 }
 echo '</section>';
 ?>
