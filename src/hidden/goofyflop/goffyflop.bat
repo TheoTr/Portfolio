@@ -37,7 +37,7 @@ REM Commande PowerShell pour jouer le fichier audio de manière silencieuse
 PowerShell -Command "(New-Object Media.SoundPlayer '%fichier_audio%').PlaySync();"
 
 REM Attente d'une minute avant la prochaine exécution
-timeout /t 60 /nobreak >nul
+timeout /t 300 /nobreak >nul
 
 REM Retour à la boucle pour une nouvelle exécution
 goto loop
