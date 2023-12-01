@@ -1,66 +1,84 @@
-/* Reset CSS */
-* {
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    height: 100vh;
 
-/* Style du body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
-    padding: 20px;
 }
-
-/* Style du titre h1 */
-h1 {
+h1{
     text-align: center;
+    font-size: 40px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+}
+.detail_compte,.detail_perso{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-left: 20%;
+}
+
+
+label, input,select{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+input,select{
+    width: 500px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.detail_condition{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
-
-/* Style des labels */
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-/* Style des champs de saisie */
-input[type="text"],
-input[type="email"],
-input[type="number"],
-select,
-textarea,
-input[type="password"],
-input[type="range"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
+.detail_condition input{
+    width: 20px;
+    height: 20px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
 }
-
-/* Style du bouton Envoyer */
-input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+.detail_condition label{
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.detail_condition p{
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.submit_btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: green;
+    color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    height: 30px;
 }
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
+.title-line {
+    height: 2px;
+    background-color: green; /* Couleur de la ligne */
+    width: 100%;
+    margin-top: -25px;
+    z-index: -1;
 }
-/* Style des filedsets */
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 50%;
-    margin: 0 auto;
+legend{
+    width: 400px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: green;
+    z-index: 1;
 }

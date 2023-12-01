@@ -1,72 +1,81 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<title>Formulaire</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<h1>Formulaire</h1>
-<form action="traitement.php" method="post">
-    <fieldset>
+    <h1>Créer un compte gratuit</h1>
+    <form action="traitement.php" method="post">
+        <legend>Détails du compte</legend>
+        <div class="title-line"></div>
+        <section class="detail_compte">
+            <fieldset>
+                <label for="mail">Adresse mail</label>
+                <input type="email" name="mail" id="mail" required>
+                <label for="mail2">Confirmer l'adresse mail</label>
+                <input type="email" name="mail2" id="mail2" required>
+            </fieldset>
+            <fieldset>
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="mdp" id="mdp" minlength="8" required>
+                <label for="mdp2">Confirmer le mot de passe</label>
+                <input type="password" name="mdp2" id="mdp2" minlength="8" required>
+            </fieldset>
+
+        </section>
         <legend>Informations personnelles</legend>
-        <label for="nom">Nom</label>
-        <input type="text" name="nom" id="nom" required>
-        <label for="prenom">Prénom</label>
-        <input type="text" name="prenom" id="prenom" required>
-        <label for="mail">Adresse mail</label>
-        <input type="email" name="mail" id="mail" required>
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age" min="18" max="99" required>
-        <label for="sexe">Sexe</label>
-        <select name="sexe" id="sexe">
-            <option value="homme">Homme</option>
-            <option value="femme">Femme</option>
-        </select>
-        <label for="pays">Pays de résidence</label>
-        <select name="pays" id="pays">
-            <optgroup label="Europe">
-                <option value="france">France</option>
-                <option value="belgique">Belgique</option>
-                <option value="suisse">Suisse</option>
-            </optgroup>
-            <optgroup label="Afrique">
-                <option value="algerie">Algérie</option>
-                <option value="tunisie">Tunisie</option>
-                <option value="maroc">Maroc</option>
-                <option value="madagascar">Madagascar</option>
-                <option value="benin">Bénin</option>
-                <option value="togo">Togo</option>
-            </optgroup>
-            <optgroup label="Amerique">
-                <option value="canada">Canada</option>
-                <option value="etats-unis">Etats-Unis</option>
-            </optgroup>
-        </select>
-    </fieldset>
-    <fieldset>
-        <legend>Compétences / Expériences</legend>
-        <label for="competences">Compétences</label>
-        <select name="competences" id="competences">
-            <option value="html">HTML</option>
-            <option value="css">CSS</option>
-            <option value="javascript">Javascript</option>
-            <option value="php">PHP</option>
-            <option value="mysql">MySQL</option>
-        </select>
-        <label for="experience">Expérience</label>
-        <textarea name="experience" id="experience" cols="30" rows="10"></textarea>
-        <label for="curseur">Curseur</label>
-        <input type="range" name="curseur" id="curseur" min="0" max="50" step="5">
-    </fieldset>
-    <fieldset>
-        <legend>Validation</legend>
-        <label for="mdp">Mot de passe</label>
-        <input type="password" name="mdp" id="mdp" minlength="8" required>
-        <input type="submit" value="Envoyer">
-    </fieldset>
+        <div class="title-line"></div>
+        <section class="detail_perso">
+            <fieldset>
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" required>
+                <label for="phone">Téléphone</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
+                <label for="rue">Rue</label>
+                <input type="text" name="rue" id="rue" required>
+                <label for="ville">Ville</label>
+                <input type="text" name="ville" id="ville" required>
+                <label for="pays">Pays</label>
+                <input type="text" name="pays" id="pays" required>
+                <label for="site">Site web</label>
+                <input type="url" name="site" id="site">
+            </fieldset>
+            <fieldset>
+                <label for="genre">Genre</label>
+                <select name="genre" id="genre" required>
+                    <option value="homme">Homme</option>
+                    <option value="femme">Femme</option>
+                    <option value="autre">Autre</option>
+                </select>
+                <label for="date">Date de naissance</label>
+                <input type="date" name="date" id="date" required>
+                <label for="nationalite">Nationalité</label>
+                <input type="text" name="nationalite" id="nationalite" required>
+            </fieldset>
+        </section>
+        <legend>Conditions d'utilisation</legend>
+        <div class="title-line"></div>
+        <section class="detail_condition">
+            <fieldset>
+                <div>
+                    <input type="checkbox" name="condition" id="condition" required>
+                    <label for="condition">J'accepte <a href="#">les conditions d'utilisation</a></label>
+                </div>
+                <div>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">Je souhaite recevoir la newsletter</label>
+                </div>
+            </fieldset>
+            <button class="submit_btn">Sousmettre</button>
+        </section>
+
+
 
 
 </body>
+
 </html>
