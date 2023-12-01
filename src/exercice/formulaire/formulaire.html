@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Formulaire</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>Formulaire</h1>
+<form action="traitement.php" method="post">
+    <fieldset>
+        <legend>Informations personnelles</legend>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" required>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" required>
+        <label for="mail">Adresse mail</label>
+        <input type="email" name="mail" id="mail" required>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="99" required>
+        <label for="sexe">Sexe</label>
+        <select name="sexe" id="sexe">
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+        </select>
+        <label for="pays">Pays de résidence</label>
+        <select name="pays" id="pays">
+            <optgroup label="Europe">
+                <option value="france">France</option>
+                <option value="belgique">Belgique</option>
+                <option value="suisse">Suisse</option>
+            </optgroup>
+            <optgroup label="Afrique">
+                <option value="algerie">Algérie</option>
+                <option value="tunisie">Tunisie</option>
+                <option value="maroc">Maroc</option>
+                <option value="madagascar">Madagascar</option>
+                <option value="benin">Bénin</option>
+                <option value="togo">Togo</option>
+            </optgroup>
+            <optgroup label="Amerique">
+                <option value="canada">Canada</option>
+                <option value="etats-unis">Etats-Unis</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Compétences / Expériences</legend>
+        <label for="competences">Compétences</label>
+        <select name="competences" id="competences">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+            <option value="php">PHP</option>
+            <option value="mysql">MySQL</option>
+        </select>
+        <label for="experience">Expérience</label>
+        <textarea name="experience" id="experience" cols="30" rows="10"></textarea>
+        <label for="curseur">Curseur</label>
+        <input type="range" name="curseur" id="curseur" min="0" max="50" step="5">
+    </fieldset>
+    <fieldset>
+        <legend>Validation</legend>
+        <label for="mdp">Mot de passe</label>
+        <input type="password" name="mdp" id="mdp" minlength="8" required>
+        <input type="submit" value="Envoyer">
+    </fieldset>
+
+
+</body>
+</html>

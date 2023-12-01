@@ -1,60 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Connexion</title>
 </head>
-
-<style>
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url('background6.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-}
-input {
-    width: 100%;
-    height: 30px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form {
-    width: 300px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 200px;
-}
-
-h2 {
-    text-align: center;
-    font-size: 30px;
-}
-.logframe {
-    margin-top : 30px;
-}
-.register{
-    display:flex;
-    text-decoration: none;
-    justify-content: center;
-    font-size: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black;
-}
-h3 {
-    text-align: center;
-}
-    </style>
 <body>
     
     <form method="post" action="login_process.php">
